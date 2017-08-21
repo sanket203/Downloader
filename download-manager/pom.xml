@@ -23,6 +23,8 @@
 	 			<groupId>com.test.downloader</groupId>
   				<artifactId>downloader</artifactId>
  			    <version>0.0.1-SNAPSHOT</version>
+				<scope>system</scope>
+<systemPath>${project.basedir}/lib/downloader.jar</systemPath>
 	
 </dependency>
 	</dependencies>
