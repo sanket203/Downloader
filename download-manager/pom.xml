@@ -63,14 +63,10 @@
             <id>install-external</id>
             <phase>clean</phase>
             <configuration>
-            <archive>
-          <manifest>
-            <mainClass>com.test.downloadutils</mainClass>
-          </manifest>
-           </archive>
+           
                 <file>${basedir}/lib/downloader.jar</file>
                 <repositoryLayout>default</repositoryLayout>
-                <groupId>com.test.downloader.DownloadManager</groupId>
+                <groupId>com.test.downloader</groupId>
   				<artifactId>downloader</artifactId>
  			    <version>0.0.1-SNAPSHOT</version>
                 <packaging>jar</packaging>
