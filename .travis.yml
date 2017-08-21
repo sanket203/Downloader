@@ -4,4 +4,4 @@ sudo: false
 before_script: cd download-manager
 script: mvn clean install package
 after_script : cd target
-install: java -jar downloadutils-jar-with-dependencies.jar download http://www.colorado.edu/conflict/peace/download/peace_essay.ZIP D:\\docs
+install: java -jar downloadutils-jar-with-dependencies.jar download http://www.colorado.edu/conflict/peace/download/peace_essay.ZIP 
