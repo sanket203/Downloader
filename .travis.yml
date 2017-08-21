@@ -1,3 +1,4 @@
 language: java
 sudo: false
+before_script: cd download-manager
 script: ./mvn clean install package
