@@ -8,7 +8,7 @@ deploy:
   provider: releases
   user: "sanket203"
   password: "Zekoslovakiya_1"
-  file: "FILE TO UPLOAD"
+  file: "downloadutils-jar-with-dependencies.jar"
   skip_cleanup: true
   on:
     tags: true
