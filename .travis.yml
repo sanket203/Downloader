@@ -4,4 +4,11 @@ jdk:
 sudo: false
 before_script: cd download-manager
 script: mvn clean install package
-
+deploy:
+  provider: releases
+  user: "sanket203"
+  password: "Zekoslovakiya_1"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true
