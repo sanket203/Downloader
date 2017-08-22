@@ -3,11 +3,10 @@ jdk:
   - oraclejdk8
 sudo: false
 before_script: cd download-manager
-script: mvn clean install package
+script: mvn clean install
 deploy:
   provider: releases
-  user: "sanket203"
-  password: "Zekoslovakiya_1"
+  api_key: '$GITHUB_API_KEY'
   file: "downloadutils-jar-with-dependencies.jar"
   skip_cleanup: true
   on:
