@@ -3,12 +3,5 @@ jdk:
   - oraclejdk8
 sudo: false
 before_script: cd download-manager
-script: mvn clean install
-deploy:
-  provider: releases
-  api_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7JGG7pd1DN1eXR9nsS/5gxek9VRSo+ftYyD1bI8GAVOmdEgA+sHZs5wVws70w+TWrLUa899LUD90t5IZTqzW6hdmielw7lSnZr6cbMbAXJqPsf16RUuJJXti4PXs6nThrMuZV5rQVjSIvjCj9ik18hmSvmXeWWjhLfBQUp/JjqGi61LQtepoGm0IFz6BCZW9GVK30b3RxYCxEyNdDgyziu+Z+/g0OnaONg2HKIfCT3DmDGW/uAOoTaAkB5E/Oydhsyf/ikpp5HOEH8qvyGcbymvLD/fCE2XVSDR7VIpwLq6r7WhJDth1mmxBSfouqE7o/DA1qfCPWSUR01IVIskwx sanket203@gmail.com
-"
-  file: "downloadutils-jar-with-dependencies.jar"
-  skip_cleanup: true
-  on:
-    tags: true
+script: mvn clean install package
+
