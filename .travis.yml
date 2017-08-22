@@ -4,3 +4,9 @@ jdk:
 sudo: false
 before_script: cd downloader
 script: mvn clean install
+deploy:
+  provider: releases
+  file: "downloadutils-jar-with-dependencies.jar"
+  skip_cleanup: true
+  on:
+    tags: true
